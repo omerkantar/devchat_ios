@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (4.4.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - Socket.IO-Client-Swift (8.3.3)
+  - SwiftyJSON (3.1.4)
+  - Tailor (2.0.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - AlamofireImage (~> 3.2)
+  - Socket.IO-Client-Swift (~> 8.3)
+  - SwiftyJSON
+  - Tailor (~> 2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  Socket.IO-Client-Swift: a2faffdbde89c63aebc5d631041530c1068b02b8
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+  Tailor: 6f03d033af361a7cf1f25627a1877c5b91a9618c
+
+PODFILE CHECKSUM: e0951bab120bb629ecc6ffbb6eabe10400eabb97
+
+COCOAPODS: 1.2.1

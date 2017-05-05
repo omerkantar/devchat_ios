@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TabViewController" customModule="Gitchat" customModuleProvider="target">
+            <connections>
+                <outlet property="chatsButton" destination="iiN-ya-Fyi" id="LrC-w4-Bkx"/>
+                <outlet property="contentView" destination="cy0-dd-Zip" id="G19-8L-vh6"/>
+                <outlet property="groupsButton" destination="cLd-Uh-o1F" id="L9l-w9-TcF"/>
+                <outlet property="profilButton" destination="YDV-Um-JUh" id="9LS-fk-FLL"/>
+                <outlet property="tabBarView" destination="Pq6-21-WNR" id="xL9-yx-y9d"/>
+                <outlet property="usersButton" destination="Pw6-cg-lw7" id="yoB-61-Rtt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pq6-21-WNR">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLd-Uh-o1F">
+                            <rect key="frame" x="8" y="12" width="84" height="30"/>
+                            <state key="normal" title="Groups">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedGroupsButton" destination="-1" eventType="touchUpInside" id="i8h-KY-FSO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiN-ya-Fyi">
+                            <rect key="frame" x="100" y="12" width="83.5" height="30"/>
+                            <state key="normal" title="Chats">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedChatsButton" destination="-1" eventType="touchUpInside" id="kPP-7j-5qg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pw6-cg-lw7">
+                            <rect key="frame" x="191.5" y="12" width="84" height="30"/>
+                            <state key="normal" title="Users">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedUsersButton" destination="-1" eventType="touchUpInside" id="lvT-lJ-RPw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDV-Um-JUh">
+                            <rect key="frame" x="283.5" y="12" width="83.5" height="30"/>
+                            <state key="normal" title="Me">
+                                <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="tappedProfilButton" destination="-1" eventType="touchUpInside" id="g9C-xC-6zd"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2u-6h-KFN">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="dJ4-rl-U50"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="i2u-6h-KFN" firstAttribute="top" secondItem="Pq6-21-WNR" secondAttribute="top" id="4uS-dd-FVm"/>
+                        <constraint firstItem="cLd-Uh-o1F" firstAttribute="centerY" secondItem="Pq6-21-WNR" secondAttribute="centerY" id="8BW-ec-6tX"/>
+                        <constraint firstItem="YDV-Um-JUh" firstAttribute="width" secondItem="cLd-Uh-o1F" secondAttribute="width" id="9nP-jY-khP"/>
+                        <constraint firstItem="YDV-Um-JUh" firstAttribute="height" secondItem="cLd-Uh-o1F" secondAttribute="height" id="Ewk-Ue-Rvd"/>
+                        <constraint firstItem="YDV-Um-JUh" firstAttribute="leading" secondItem="Pw6-cg-lw7" secondAttribute="trailing" constant="8" id="Izu-iU-50D"/>
+                        <constraint firstItem="iiN-ya-Fyi" firstAttribute="leading" secondItem="cLd-Uh-o1F" secondAttribute="trailing" constant="8" id="JgZ-Cz-82O"/>
+                        <constraint firstItem="Pw6-cg-lw7" firstAttribute="centerY" secondItem="Pq6-21-WNR" secondAttribute="centerY" id="Lto-Q1-xMH"/>
+                        <constraint firstItem="Pw6-cg-lw7" firstAttribute="leading" secondItem="iiN-ya-Fyi" secondAttribute="trailing" constant="8" id="PWJ-r4-Uyl"/>
+                        <constraint firstItem="cLd-Uh-o1F" firstAttribute="leading" secondItem="Pq6-21-WNR" secondAttribute="leading" constant="8" id="T8p-MW-LZf"/>
+                        <constraint firstItem="YDV-Um-JUh" firstAttribute="centerY" secondItem="Pq6-21-WNR" secondAttribute="centerY" id="WxB-V4-A4A"/>
+                        <constraint firstItem="i2u-6h-KFN" firstAttribute="leading" secondItem="Pq6-21-WNR" secondAttribute="leading" id="agq-p5-frz"/>
+                        <constraint firstAttribute="trailing" secondItem="i2u-6h-KFN" secondAttribute="trailing" id="bgH-Qg-fVO"/>
+                        <constraint firstItem="Pw6-cg-lw7" firstAttribute="width" secondItem="cLd-Uh-o1F" secondAttribute="width" id="mHM-FX-Bpk"/>
+                        <constraint firstItem="iiN-ya-Fyi" firstAttribute="width" secondItem="cLd-Uh-o1F" secondAttribute="width" id="nhA-3m-4L9"/>
+                        <constraint firstItem="iiN-ya-Fyi" firstAttribute="centerY" secondItem="Pq6-21-WNR" secondAttribute="centerY" id="pLM-9c-ShE"/>
+                        <constraint firstAttribute="trailing" secondItem="YDV-Um-JUh" secondAttribute="trailing" constant="8" id="qYN-Nn-CDg"/>
+                        <constraint firstItem="Pw6-cg-lw7" firstAttribute="height" secondItem="cLd-Uh-o1F" secondAttribute="height" id="sUb-hA-6Rk"/>
+                        <constraint firstItem="iiN-ya-Fyi" firstAttribute="height" secondItem="cLd-Uh-o1F" secondAttribute="height" id="sju-dn-AlK"/>
+                        <constraint firstAttribute="height" constant="55" id="v1V-fV-XvV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cy0-dd-Zip">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="612"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Pq6-21-WNR" firstAttribute="top" secondItem="cy0-dd-Zip" secondAttribute="bottom" id="4Lw-4C-Con"/>
+                <constraint firstItem="cy0-dd-Zip" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HcG-2N-qHd"/>
+                <constraint firstAttribute="bottom" secondItem="Pq6-21-WNR" secondAttribute="bottom" id="K6n-kq-B7m"/>
+                <constraint firstAttribute="trailing" secondItem="cy0-dd-Zip" secondAttribute="trailing" id="O74-Da-luy"/>
+                <constraint firstAttribute="trailing" secondItem="Pq6-21-WNR" secondAttribute="trailing" id="QNY-Oy-FIi"/>
+                <constraint firstItem="Pq6-21-WNR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nSY-9a-HTa"/>
+                <constraint firstItem="cy0-dd-Zip" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yK1-0h-Mkh"/>
+            </constraints>
+            <point key="canvasLocation" x="40.5" y="59.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vi5-fL-ZXY" customClass="NotificationView" customModule="Gitchat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="AlY-BV-1ZZ">
+                    <rect key="frame" x="16" y="20" width="244" height="40"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2b-dH-nHk">
+                    <rect key="frame" x="268" y="30" width="20" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="prq-vT-rUe"/>
+                        <constraint firstAttribute="height" constant="20" id="u8t-CW-7N8"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UZ-3g-UMH">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <action selector="tappedButton" destination="vi5-fL-ZXY" eventType="touchUpInside" id="c7X-d0-2nP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="K2b-dH-nHk" secondAttribute="trailing" constant="12" id="1AA-pb-CkA"/>
+                <constraint firstItem="AlY-BV-1ZZ" firstAttribute="top" secondItem="vi5-fL-ZXY" secondAttribute="top" constant="20" id="5lA-jr-wJ5"/>
+                <constraint firstAttribute="trailing" secondItem="AlY-BV-1ZZ" secondAttribute="trailing" constant="40" id="lzi-AM-L8q"/>
+                <constraint firstItem="AlY-BV-1ZZ" firstAttribute="leading" secondItem="vi5-fL-ZXY" secondAttribute="leading" constant="16" id="m9R-7M-YAt"/>
+                <constraint firstItem="K2b-dH-nHk" firstAttribute="centerY" secondItem="AlY-BV-1ZZ" secondAttribute="centerY" id="qjK-JY-KgA"/>
+                <constraint firstAttribute="bottom" secondItem="AlY-BV-1ZZ" secondAttribute="bottom" constant="20" id="tFT-ph-5me"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="circleView" destination="K2b-dH-nHk" id="1Ih-64-4Kx"/>
+                <outlet property="titleLabel" destination="AlY-BV-1ZZ" id="pTe-iC-UOk"/>
+            </connections>
+            <point key="canvasLocation" x="-87" y="220"/>
+        </view>
+    </objects>
+</document>
